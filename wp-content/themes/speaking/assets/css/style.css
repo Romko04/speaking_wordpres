@@ -358,10 +358,10 @@ banner
     cursor: pointer;
     transition: all ease .2s;
 }
-.banner__buy-btn{
+.banner__btn-link{
     margin-bottom: 92px;
-
 }
+
 
 .banner__btn:hover {
     background-color: #ebae68;
@@ -373,14 +373,16 @@ banner
     top: 30px;
     z-index: 4;
     color: #FFF;
-    font-family: Inter;
+    font-family: Unbounded;
     position: absolute;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
-
+.buy__btn:hover{
+    background: #cdaf8d;
+}
 
 /*
 banner end
@@ -899,7 +901,7 @@ who end
 .swiper__content-name {
     color: #000;
     font-family: Unbounded;
-    font-size: 20.227px;
+    font-size: 10.227px;
     font-style: normal;
     font-weight: 600;
     line-height: 154.35%;
@@ -1013,13 +1015,14 @@ max-width: 100%;
 }
 
 .modal-content-text {
-    color: #000;
+   color: #000;
     font-family: Unbounded;
     font-size: 17px;
     font-style: normal;
+    overflow-y: scroll;
     font-weight: 600;
+    height: 60vh;
     line-height: 154.35%;
-    /* 15.435px */
     text-transform: uppercase;
     margin-top: 20px;
 
@@ -1085,7 +1088,7 @@ margin-bottom: 35px;
     flex-direction: column;
     gap: 10px;
 }
-.programms__item-list li {
+.programms__item li {
     position: relative;
     color: #FFF;
     font-family: Unbounded;
@@ -1097,7 +1100,8 @@ margin-bottom: 35px;
     text-transform: uppercase;
     padding-left: 22px;
 }
-.programms__item-list li::after {
+
+.programms__item li::after {
     content: '';
     top: 0;
     position: absolute;
@@ -1154,7 +1158,13 @@ font-weight: 600;
 line-height: 180.35%; /* 34.41px */
 text-transform: uppercase;
 cursor: pointer;
+transition: all ease .2s;
+
 }
+.checkout__btn:hover{
+    background: #e2c3c3;
+}
+
 
 
 
@@ -1162,6 +1172,8 @@ cursor: pointer;
 /*footer*/
 .footer{
     padding: 50px;
+    position: relative;
+    z-index: 4;
     background-color: #FF9519;;
 }
 .footer__content{
@@ -1492,5 +1504,21 @@ line-height: normal;
     .trigger {
         margin: 20px 0;
     }
+    .public__title,.privacy__title{
+    font-size: 20px;
 }
-
+}
+/*public and */
+.public-title__text,.privacy__text{
+    color: #FFF;
+font-family: Unbounded;
+font-size: 16.234px;
+font-style: normal;
+font-weight: 600;
+line-height: 154.35%; /* 25.057px */
+text-transform: uppercase;
+margin: 100px 0 150px 0 ;
+}
+.public__title,.privacy__title{
+    margin-top: 50px;
+}

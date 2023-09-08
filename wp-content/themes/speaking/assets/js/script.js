@@ -113,7 +113,7 @@ const openModal = (item) => {
       <div class="modal__content-top">
         <img class="swiper__content-img" src="${imgUrl}" alt="image">
         <div class="modal__content-top__text">
-            <span class="swiper__content-name">${name}</span> 
+                <span class="swiper__content-name">${name}</span> 
             <span class="swiper__content-expert">${expert}</span> 
         </div>                
       </div>
